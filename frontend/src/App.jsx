@@ -8,13 +8,16 @@ import DeleteBook from './pages/DeleteBook';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/books/create' element={<CreateBook />} />
-      <Route path='/books/details/:id' element={<ShowBook />} />
-      <Route path='/books/edit/:id' element={<EditBook />} />
-      <Route path='/books/delete/:id' element={<DeleteBook />} />
-    </Routes>
+    <div className='font-sans antialiased text-red bg-gradient-to-r from-blue-900 to-gray-900 min-h-screen'>
+      {/* Set the background color for the entire page */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/books/create' element={<CreateBook />} />
+        <Route path='/books/details/:id' element={<ShowBook />} />
+        <Route path='/books/edit/:id' element={<EditBook />} />
+        <Route path='/books/delete/:id' element={<DeleteBook />} />
+      </Routes>
+    </div>
   );
 };
 
